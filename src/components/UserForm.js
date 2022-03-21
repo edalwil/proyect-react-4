@@ -1,22 +1,41 @@
-import React from 'react';
+import React, { useEffect} from 'react';
 import { useForm } from 'react-hook-form';
 import Swal from 'sweetalert2'
 
-const UserForm = ( {addUser, closeUserTab} ) => {
+const UserForm = ( {addUser, closeUserTab,isSelect,modifyUser} ) => {
 
-      const { register, handleSubmit } = useForm();
-
+      const { register, handleSubmit,reset } = useForm();
+      
       const submit = (event, e) => {
+
             const data = {
                   first_name:event?.first_name,
                   last_name:event?.last_name,
                   email:event?.email,
                   password:event?.password,
                   birthday:event?.birthday
-            }
-            addUser(data)
+            }     
             e.target.reset()
+            reset(data)
+            if (isSelect) {
+                  modifyUser(isSelect?.id, data)
+            }else {
+                  addUser(data)
+            }
       }
+
+      useEffect(() => {
+            if (isSelect) {
+                  const selectUser = {
+                        first_name:isSelect?.first_name,
+                        last_name:isSelect?.last_name,
+                        email:isSelect?.email,
+                        password:isSelect?.password,
+                        birthday:isSelect?.birthday
+                  }
+                  reset(selectUser)
+            }
+      }, [isSelect, reset]);
 
       const addUserAlert = () => {
             Swal.fire({

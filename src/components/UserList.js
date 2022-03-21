@@ -1,7 +1,7 @@
 import React from 'react';
 import Swal from 'sweetalert2'
 
-const UserList = ( { users, deleteUser} ) => {
+const UserList = ( { users, deleteUser,isSelectUser, createUser} ) => {
 
       const userDelete = id => {
             Swal.fire({
@@ -28,11 +28,11 @@ const UserList = ( { users, deleteUser} ) => {
                   {
                         users?.map( user => (    
                         <div  className='list-user' key={user.id}>
-                              <h4>{user?.first_name}</h4>
+                              <h4>{user?.first_name} {user?.last_name}</h4>
                               <p><b>correo</b><br />{user?.email}</p>
                               <p><b>Cumpleaños</b><br />{user?.birthday}</p><br />
                               <div className='container-button'>
-                                    <button className='button-edit circle'>
+                                    <button onClick={() => isSelectUser(user)} className='button-edit circle'>
                                           <i className="fa-solid fa-pen"></i>
                                     </button>
                                     <button onClick={() =>userDelete(user?.id)} className='button-delete circle'>
