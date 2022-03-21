@@ -54,7 +54,7 @@ function App() {
     <div className='user'>
           <h1>Usuarios</h1>
           <button onClick={() => setCreateUser(!createUser)} className='button-new-user'>
-                <i className="fa-solid fa-plus"></i>crear nuevo usuario 
+                <i className="fa-solid fa-plus"></i>new user 
             </button>  
     </div>
     <div className='cointenier-userform'>

@@ -24,17 +24,16 @@ body {
   border: none;
   color: #fff;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-style: regular;
   font-size: 16px;
   background-color: #555a88;
   width: 200px;
   height: 45px;
-  transition: all 300px;
   border-radius: 10px;
 }
 
 .button-new-user:hover {
   background-color: #2b36b1;
+  transition: all 300px;
 }
 
 /* creacion de usuario */
@@ -122,7 +121,7 @@ body {
 .list-user{
   box-shadow: 2px 2px 5px rgb(42, 42, 42);
   border: solid 1px #E5E5E5;
-  width: 250px;
+  width: 270px;
   height: 215px;
   padding: 10px;
   margin: 10px 0;
@@ -170,6 +169,13 @@ b {
   padding-top: 10px;
   border-top: solid #cfcece 1px;
   text-align: right;
+}
+
+@media only screen and (max-width: 600px) {
+  .user h1 {
+    margin-right: 30px;
+    font-size: 1.5rem;
+  }
 }
 
 
