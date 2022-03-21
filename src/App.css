@@ -1,0 +1,175 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  padding: 50px;
+}
+
+.user {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  margin-bottom: 20px;
+}
+
+.fa-solid{
+  padding: 0 10px
+}
+
+.button-new-user {
+  border: none;
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-style: regular;
+  font-size: 16px;
+  background-color: #555a88;
+  width: 200px;
+  height: 45px;
+  transition: all 300px;
+  border-radius: 10px;
+}
+
+.button-new-user:hover {
+  background-color: #2b36b1;
+}
+
+/* creacion de usuario */
+
+.cancel-user-creation{
+  display: flex;
+  justify-content:space-between;
+}
+
+.cancel-user-creation button{
+  margin-top: 10px;
+  background-color: #29a055;
+  border: none;
+  color: white;
+  height: 20px;
+  width: 40px;
+  border-radius: 50px;
+}
+
+.cancel-user-creation button:active{
+  background-color: red;
+}
+
+.cointenier-userform{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.container-form {
+  box-shadow: 10px 1px 20px rgb(31, 30, 30);
+  border: solid #434772 2px;
+  width: 300px;
+  height: auto;
+  padding: 0 15px;
+}
+
+.container-form h3 {
+  padding: 10px 0;
+}
+
+.form-user  input{
+  border:none;
+  padding: 10px 15px;
+  width: 100%;
+  height: 30px;
+  background-color: #F9FAFC;
+  border-radius: 10px;
+}
+
+.user-form {
+  padding: 10px;
+}
+
+.button-creation-user{
+  margin: 20px 0;
+  width: 100%;
+  height: 30px;
+}
+
+.button-creation-user{
+  border: none;
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-style: regular;
+  font-size: 16px;
+  background-color: #555a88;
+  height: 45px;
+  transition: all 300px;
+  border-radius: 10px;
+}
+
+.button-creation-user:hover{
+  background-color: #2b36b1;
+}
+
+/* tabla de usuarios */
+
+.container-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.list-user{
+  box-shadow: 2px 2px 5px rgb(42, 42, 42);
+  border: solid 1px #E5E5E5;
+  width: 250px;
+  height: 215px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.list-user p {
+  margin-top: 10px;
+}
+
+b {
+  color: #bdbdbe;
+}
+
+.button-edit{
+  background-color: #29a055;
+  border: none;
+  color: white;
+  height: 40px;
+  width: 40px;
+  transition: all 300px   ;
+}
+
+.button-delete{
+  background-color: #f59e0b;
+  border: none;
+  color: white;
+  height: 40px;
+  width: 40px;
+  transition: all 300px  ;
+}
+
+.button-delete:hover{
+  background-color: #dd910e;
+}
+
+.button-edit:hover{
+  background-color: #1d8756;
+}
+
+.circle {
+  border-radius: 10px;
+}
+
+.container-button {
+  padding-top: 10px;
+  border-top: solid #cfcece 1px;
+  text-align: right;
+}
+
+
